@@ -88,7 +88,7 @@ body {
       rgba(111, 96, 88, 0.3),
       rgba(111, 96, 88, 0.3)
     ),
-    url(/img/Head.jpg);
+    url(/img/background/Head.jpg);
   background-size: cover;
   max-height: 100vh;
   /* max-width: 100%; */
@@ -353,7 +353,7 @@ body {
 }
 
 .gallery-img {
-  border-radius: 8%;
+  border-radius: 20px;
   max-width: 100%;
   transition: all 0.5s;
   padding: 1.6rem 1.6rem;

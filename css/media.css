@@ -105,7 +105,7 @@
     grid-template-columns: 1fr;
   }
   .about-img {
-    content: url(/img/features\ Images/img31H.jpg);
+    content: url(/img/about/img31H);
     order: 0;
     justify-self: center;
   }
