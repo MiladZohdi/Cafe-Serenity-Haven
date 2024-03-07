@@ -217,13 +217,11 @@ body {
 }
 
 .feature-box {
-  align-self: start;
   display: grid;
+
   grid-template-rows: 2fr 6fr;
 }
 .feature-disc-box {
-  /* margin: 1.6rem; */
-
   padding: 2.4rem 1.6rem;
   background-color: #311c10;
   border-radius: 11px;
