@@ -7,3 +7,5 @@ Explore the site to discover a delightful blend of responsive design, intuitive 
 Whether you're a fellow enthusiast in web development, a coffee connoisseur, or simply seeking a moment of serenity, I invite you to take a seat, relax, and enjoy your stay at Cafe Serenity Haven.
 
 Thank you for visiting, and may your journey through this digital haven be as refreshing as a sip of your favorite brew! 🌿☕
+
+Here is the link for live website: https://serenity-milad.netlify.app/
