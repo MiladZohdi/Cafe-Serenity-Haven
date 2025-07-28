@@ -1,22 +1,17 @@
 const tl = gsap.timeline();
-tl.to(".nav", {
-  scaleX: 1,
-  duration: 0.5,
-  ease: "linear",
-})
-  .fromTo(
-    ".Header-primary",
-    {
-      x: "-100%",
-      opacity: 0,
-    },
-    {
-      x: 0,
-      opacity: 1,
-      duration: 0.5,
-      ease: "power2.out",
-    }
-  )
+tl.fromTo(
+  ".Header-primary",
+  {
+    x: "-100%",
+    opacity: 0,
+  },
+  {
+    x: 0,
+    opacity: 1,
+    duration: 0.5,
+    ease: "power2.out",
+  }
+)
   .fromTo(
     ".hero-description",
     {
@@ -109,9 +104,9 @@ const about = gsap.timeline({
   },
   paused: true,
   scrollTrigger: {
-    trigger: ".about-header",
+    trigger: ".feature-box",
     endTrigger: ".about",
-    start: " center",
+    start: "bottom center",
     end: "bottom bottom",
     scrub: true,
     preventOverlaps: true,
@@ -135,7 +130,7 @@ const how = gsap.timeline({
   scrollTrigger: {
     trigger: ".section-how",
     endTrigger: ".section-how",
-    start: " center",
+    start: "-25% center",
     end: "bottom bottom",
     scrub: true,
     preventOverlaps: true,
@@ -160,18 +155,17 @@ const menu = gsap.timeline({
   },
   paused: true,
   scrollTrigger: {
-    trigger: ".section-menu",
+    trigger: ".section-how",
     endTrigger: ".gallery-header",
-    start: " center",
+    start: "80% center",
     end: "bottom bottom",
     scrub: true,
     preventOverlaps: true,
   },
 });
 
-menu.to(".products ", {
-  x: 0,
-  opacity: 1,
+menu.from(".products ", {
+  opacity: 0,
   stagger: {
     amount: 5,
     each: 1,
@@ -187,11 +181,12 @@ const gallery = gsap.timeline({
   },
   paused: true,
   scrollTrigger: {
-    trigger: ".section-gallery",
+    trigger: ".products",
     endTrigger: ".gallery",
-    start: " center",
+    start: "50% center",
     end: "top center",
     scrub: true,
+    markers: true,
   },
 });
 
@@ -201,27 +196,14 @@ gallery.to(".gallery ", {
 
 /* ------------------------------- section testimonials ------------------------------ */
 
-const testimonials = gsap.timeline({
-  defaults: {
-    ease: "none",
-  },
-  paused: true,
+gsap.from(".testimonial-box", {
   scrollTrigger: {
-    trigger: ".gallery",
-    endTrigger: ".testimonial-box",
-    start: "bottom center",
-    end: "top center",
-    scrub: true,
-    preventOverlaps: true,
+    trigger: ".testimonial-box",
+    start: "top 80%",
+    markers: false,
   },
-});
-
-testimonials.to(".testimonial-box  ", {
-  x: 0,
-  opacity: 1,
-  stagger: {
-    amount: 3,
-    each: 0.1,
-    from: 0,
-  },
+  opacity: 0,
+  y: "50%",
+  duration: 1,
+  ease: "ease",
 });

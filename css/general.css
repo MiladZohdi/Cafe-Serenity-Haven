@@ -97,7 +97,6 @@ body {
 .nav {
   height: 4.8rem;
   max-width: 100%;
-  transform: scaleX(0);
   margin: 8rem auto;
   background-color: #eae8e7;
   display: flex;
@@ -322,7 +321,7 @@ body {
   border-radius: 11px;
 }
 .products {
-  opacity: 0;
+  opacity: 1;
 }
 .product-img {
   height: 15rem;
@@ -390,8 +389,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  transform: translateX(-50%);
-  opacity: 0;
+  opacity: 1;
 }
 .testimonial-img {
   height: 12rem;
