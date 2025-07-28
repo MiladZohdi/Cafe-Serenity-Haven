@@ -186,7 +186,6 @@ const gallery = gsap.timeline({
     start: "50% center",
     end: "top center",
     scrub: true,
-    markers: true,
   },
 });
 
