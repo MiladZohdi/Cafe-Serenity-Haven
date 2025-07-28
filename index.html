@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -35,10 +35,10 @@
     <link rel="icon" href="/img/Logo/Desktop.png" />
     <link rel="apple-touch-icon" href="/img/Logo/iphone.png" />
     <link rel="manifest" href="manifest.webmanifest" />
-    <script defer src="/scripts/Script.js"></script>
   </head>
   <body>
     <main>
+      <!-- -------------------------------- Hero --------------------------------- -->
       <section class="section-hero" id="hero">
         <div class="container">
           <div class="nav-container">
@@ -86,6 +86,7 @@
         </div>
       </section>
 
+      <!-- ------------------------------ features ------------------------------- -->
       <section class="section-features" id="sec-feat">
         <div class="container">
           <h2 class="header-scondary">
@@ -126,8 +127,7 @@
               </div>
             </div>
           </div>
-
-          <h2 class="header-scondary">
+          <h2 class="header-scondary about-header">
             Unveiling the Tranquil World of Café Serenity Haven
           </h2>
           <div class="about grid grid--2-cols align-about">
@@ -151,6 +151,7 @@
         </div>
       </section>
 
+      <!-- --------------------------------- How --------------------------------- -->
       <section class="section-how" id="sec-how">
         <div class="container">
           <h2 class="header-scondary color">
@@ -241,6 +242,7 @@
         </div>
       </section>
 
+      <!-- -------------------------------- Menu --------------------------------- -->
       <section class="section-menu" id="sec-menu">
         <div class="container menu-container">
           <div class="header-container">
@@ -293,9 +295,10 @@
         </div>
       </section>
 
+      <!-- ------------------------------- Gallery ------------------------------- -->
       <section class="section-gallery" id="sec-gall">
         <div class="container">
-          <h2 class="header-scondary color">
+          <h2 class="header-scondary color gallery-header">
             A Visual Symphony of Brews and Ambiance
           </h2>
           <div class="gallery">
@@ -323,9 +326,10 @@
         </div>
       </section>
 
+      <!-- ---------------------------- Testimonials ----------------------------- -->
       <section class="section-testimonials" id="sec-test">
         <div class="container">
-          <h2 class="header-scondary color">
+          <h2 class="header-scondary color testimonials-header">
             Discover the Highlights of Serenity Haven Café
           </h2>
 
@@ -406,6 +410,7 @@
         </div>
       </section>
 
+      <!-- ------------------------------- Footer -------------------------------- -->
       <footer class="section-footer" id="sec-foot">
         <div class="footer-container">
           <div class="l-footer">
@@ -457,5 +462,10 @@
         ></a>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="/scripts/animations.js"></script>
+    <script defer src="/scripts/Script.js"></script>
   </body>
 </html>

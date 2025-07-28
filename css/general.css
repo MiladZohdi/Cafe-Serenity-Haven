@@ -97,6 +97,7 @@ body {
 .nav {
   height: 4.8rem;
   max-width: 100%;
+  transform: scaleX(0);
   margin: 8rem auto;
   background-color: #eae8e7;
   display: flex;
@@ -104,12 +105,7 @@ body {
   align-items: center;
   border-radius: 11px;
 }
-/* .mobile-nav-active .nav {
-  display: none;
-}
-.mobile-nav-active .mobile-nav {
-  display: flex;
-} */
+
 .nav-item:link,
 .nav-item:visited {
   text-align: center;
@@ -120,14 +116,10 @@ body {
   font-size: 1.6rem;
   padding: 1.6rem 0;
   min-width: 15rem;
-  /* border-bottom: 5px solid transparent; */
-  transition: all 0.5s;
 }
 .nav-item:hover,
 .nav-item:active {
-  /* border-bottom: 5px solid currentColor; */
-  /* color: #5a4940; */
-  letter-spacing: 0.3rem;
+  color: #5a4940;
 }
 .mobile-nav {
   margin-top: 3rem;
@@ -176,13 +168,14 @@ body {
 
   animation-name: move-left;
   animation-duration: 1s;
+  opacity: 0;
 }
 .hero-description {
   margin-top: 3.2rem;
   font-weight: 400;
   font-size: 2rem;
-
   line-height: 1.3;
+  opacity: 0;
 }
 .hero-cta:link,
 .hero-cta:visited {
@@ -195,12 +188,11 @@ body {
   font-weight: 700;
   border-radius: 11px;
   background-color: #eae8e7;
-  border: 5px solid transparent;
-  transition: all 0.8s;
+  opacity: 0;
 }
-.hero-cta:hover,
 .hero-cta:active {
-  border: 5px solid #311c10;
+  background-color: #311c10;
+  color: #eae8e7;
 }
 
 /* --------------- */
@@ -223,6 +215,8 @@ body {
   display: grid;
 
   grid-template-rows: 2fr 6fr;
+  transform: translateX(-100%);
+  opacity: 0;
 }
 .feature-disc-box {
   padding: 2.4rem 1.6rem;
@@ -258,9 +252,12 @@ body {
   width: 70%;
   justify-self: center;
   justify-self: end;
+  opacity: 0;
 }
 .about-desc {
   font-size: 2rem;
+  transform: translateX(-70%);
+  opacity: 0;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.05rem;
@@ -275,6 +272,8 @@ body {
 }
 .how-box {
   align-self: start;
+  transform: translateX(80%);
+  opacity: 0;
 }
 .how-header {
   display: flex;
@@ -322,6 +321,9 @@ body {
   background-color: #140b06;
   border-radius: 11px;
 }
+.products {
+  opacity: 0;
+}
 .product-img {
   height: 15rem;
   border-radius: 22px;
@@ -351,6 +353,7 @@ body {
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
+  transform: translateY(10%);
 }
 
 .gallery-img {
@@ -387,6 +390,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  transform: translateX(-50%);
+  opacity: 0;
 }
 .testimonial-img {
   height: 12rem;
